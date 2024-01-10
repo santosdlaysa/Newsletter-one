@@ -1,3 +1,4 @@
+
 function validarEmail(email) {
     // Expressão regular para validar o formato do email
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -23,9 +24,7 @@ function validarEmail(email) {
       submitButton.disabled = false;
     }
   }
-  function voltarPagina() {
-    history.back();
-  }
+ 
 
   function subscribe() {
     // Obtenha o valor do campo de e-mail
@@ -51,4 +50,8 @@ function validarEmail(email) {
     if (submitButton.disabled) {
       event.preventDefault();
     }
-  });
+  })
+  
+  function voltarPagina() {
+    history.back();
+  };
