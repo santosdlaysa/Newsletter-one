@@ -17,7 +17,7 @@ body {
     border-radius: 3rem;
     width: 928px;
     height: 641px;
-    margin: 2rem auto;
+    margin: 10rem auto;
     display: flex;
 }
 
@@ -75,10 +75,10 @@ li > p {
 
 .email{
     font-family: Roboto;
-font-size: 12px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
 }
 
 input {
@@ -109,28 +109,29 @@ font-size: 16px;
 font-style: normal;
 font-weight: 700;
 line-height: 150%;
-margin-top: 1rem;
+margin-top: 0.5rem;
 }
 
 .button:hover {
     cursor: pointer;
-}
-
-#submitButton:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
-  }
-
-  #submitButton:enabled {
     border-radius: 8px;
     background: var(--Gradient-1, linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%));
     box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+}
+
+#submitButton:disabled {
+    background-color: #242742;
+    cursor: not-allowed;
+    color:#eeeeee;
   }
+
+
+  
   .error {
     justify-content: flex-end;
     color: red;
     margin-bottom: 1rem;
-    margin-top: 10px;
+    margin-top: 5px;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
@@ -142,11 +143,13 @@ margin-top: 1rem;
   .error-border {
     border: 1px solid rgb(249, 166, 166);
     background-color: rgb(255, 192, 192);
+    color:red;
   }
 
     .error-border:focus {
         outline: none;
     }
+
 .container-photo {
     width: 400px;
     height: 593px;
