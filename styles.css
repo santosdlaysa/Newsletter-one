@@ -1,0 +1,136 @@
+:root {
+    --DarkSlateGrey: hsl(234, 29%, 20%),
+    --CharcoalGrey: hsl(235, 18%, 26%),
+    --Grey: hsl(231, 7%, 60%),
+    --White: hsl(0, 0%, 100%)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    background-color: hsl(234, 29%, 20%);
+
+}
+.container {
+    background-color: hsl(0, 0%, 100%);    
+    border-radius: 3rem;
+    width: 928px;
+    height: 641px;
+    margin: 2rem auto;
+    display: flex;
+}
+
+.containert-sub{
+width: 376px;
+height: 446px;
+margin-top: 4rem;
+margin-left: 4rem;
+}
+
+h1 {
+    color: hsl(234, 29%, 20%);
+    font-family: Roboto;
+    font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; 
+}
+
+p {
+    color: #242742; 
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+li {
+    color: #242742; 
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    
+}
+
+li > p {
+    margin-left: 2rem;
+    margin-top: -1.8rem;
+
+}
+
+.container-form{
+    margin-top: 2rem;
+
+}
+
+.email{
+    font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+}
+
+input {
+width: 356px;
+height: 56px;
+border-radius: 8px;
+border: 1px solid rgba(25, 24, 43, 0.25);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+opacity: 0.5;
+margin-top: -2rem;
+padding-left: 1rem;
+}
+
+
+.button {
+width: 376px;
+height: 56px;
+border-radius: 8px;
+border: none;
+background-color:  #242742;
+color: white;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+margin-top: 1rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+.container-photo {
+    width: 400px;
+    height: 593px;
+    margin-top: 27px;
+    margin-left: 3.5rem;
+    border-radius: 16px;
+    border: 0px solid #19182B;
+    background:  linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
+}
+
+.attribution, a{
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0.4rem;
+    list-style: none;
+}
