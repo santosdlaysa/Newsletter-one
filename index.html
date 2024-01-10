@@ -31,12 +31,17 @@
         <path d="M6 11.3812L8.73464 14L15 8" stroke="white" stroke-width="2"/>
         </svg><p>And much more!</p></li>
 </ul>
-    <p class="email">Email address</p>
-    <form action="sucessmensage.html" class="container-form">
-      <input type="text" id="email" name="email" placeholder="email@company.com">
+      
+      <label for="emailInput" class="email" >Email address</label>
+      <div id="error-message" class="error"></div>
+    <form id="emailForm" action="./sucessmensage.html" class="container-form">
+      <br>
+      <input type="email" id="emailInput"  name="email" required placeholder="email@company.com">
+      <button  class="button" type="submit" value="Subscribe" id="submitButton" onclick="subscribe()" disabled>Subscribe to monthly newsletter</button>
 
-  <button class="button" type="submit" value="Subscribe">Subscribe to monthly newsletter</button>
-</form>  
+       
+</form> 
+
 </div>
   <div class="container-photo">
   <img src="./assets/images/illustration-sign-up-desktop.svg" alt="dashboard">
@@ -46,5 +51,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Laysa Diniz</a>.
   </div>
+  <script src="./main.js"></script>
 </body>
 </html>

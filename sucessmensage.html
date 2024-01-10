@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container-mensage">
+<>
+    <div class="container-message">
          <!-- Success message start -->
          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
           <circle cx="32" cy="32" r="32" fill="url(#paint0_linear_26_441)"/>
@@ -22,14 +22,24 @@
           </linearGradient>
           </defs>
           </svg>
-  <h1>Thanks for subscribing!</h1>
+  <h1 class="h1-2">Thanks for subscribing!</h1>
 
-  <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+  <p id="success-message">A confirmation email has been sent to <strong><span id="displayEmail"></span></strong>
     Please open it and click the button inside to confirm your subscription.</p>
 
-  <button type="submit" >Dismiss message</button>
+  <button id="voltarButton" onclick="voltarPagina()">Dismiss message</button>
 
   <!-- Success message end -->
     </div>
+    <script>
+        function voltarPagina(){
+            window.location.href = "index.html";
+        }
+
+    var urlParams = new URLSearchParams(window.location.search);
+    var email = urlParams.get('email');
+    document.getElementById("displayEmail").textContent = email;
+
+    </script>
 </body>
 </html>

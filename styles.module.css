@@ -7,7 +7,7 @@ body {
     justify-content: center;
 }
 
-.container-mensage{
+.container-message{
     width: 504px;
     height: 520px;
     border-radius: 36px;
@@ -17,7 +17,7 @@ body {
     padding: 2rem;
     }
 
-    h1 {
+   .h1-2{
         font-family: Roboto;
         font-size: 56px;
         font-style: normal;
@@ -33,7 +33,7 @@ body {
         margin: 3rem;
     }
 
-    p {
+    #success-message {
         font-family: Roboto;
         font-size: 16px;
         font-style: normal;
@@ -46,7 +46,7 @@ body {
         margin-left: 3rem;
     }
 
-    button {
+    #voltarButton {
         width: 376px;
         height: 56px;
         border-radius: 8px;
