@@ -102,8 +102,8 @@ height: 56px;
 border-radius: 8px;
 border: none;
 background-color: #616161;
-    cursor: not-allowed;
-    color:#eeeeee;
+cursor: not-allowed;
+color:#eeeeee;
 text-align: center;
 font-family: Roboto;
 font-size: 16px;
@@ -126,9 +126,8 @@ margin-top: 0.5rem;
     color:#616161;
   }
 
-  #submitButton:enabled {
+#submitButton:enabled {
     background-color: #242742;
-    cursor: not-allowed;
     color: #ffff;
 
   }
