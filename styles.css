@@ -101,8 +101,9 @@ width: 376px;
 height: 56px;
 border-radius: 8px;
 border: none;
-background-color:  #242742;
-color: white;
+background-color: #616161;
+    cursor: not-allowed;
+    color:#eeeeee;
 text-align: center;
 font-family: Roboto;
 font-size: 16px;
@@ -112,7 +113,7 @@ line-height: 150%;
 margin-top: 0.5rem;
 }
 
-.button:hover {
+.button:hover:enabled {
     cursor: pointer;
     border-radius: 8px;
     background: var(--Gradient-1, linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%));
@@ -120,10 +121,18 @@ margin-top: 0.5rem;
 }
 
 #submitButton:disabled {
+    background-color: #EEEEEE;
+    cursor: not-allowed;
+    color:#616161;
+  }
+
+  #submitButton:enabled {
     background-color: #242742;
     cursor: not-allowed;
-    color:#eeeeee;
+    color: #ffff;
+
   }
+
 
 
   
