@@ -10,6 +10,8 @@ body {
     padding: 0;
     font-family: 'roboto', sans-serif;
     background-color: hsl(234, 29%, 20%);
+    display: grid; 
+    place-items: center;
 
 }
 .container {
@@ -17,8 +19,8 @@ body {
     border-radius: 3rem;
     width: 928px;
     height: 641px;
-    margin: 10rem auto;
     display: flex;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
 }
 
 .containert-sub{
@@ -132,9 +134,6 @@ margin-top: 0.5rem;
 
   }
 
-
-
-  
   .error {
     justify-content: flex-end;
     color: red;
@@ -168,14 +167,20 @@ margin-top: 0.5rem;
     background:  linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
 }
 
-.attribution, a{
+footer {
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     text-align: center;
     color: #FFFFFF;
-    margin: 0.4rem;
     list-style: none;
+
+    
+}
+
+footer > a {
+    color: #ff6a3a;
+    text-decoration: none;
 }
 
 
